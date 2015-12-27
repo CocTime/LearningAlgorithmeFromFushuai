@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COC produce armys time calculate</title>
+</head>
+<body>
+    <input type="text">
+<table class="fixed-content">
+    <tr>
+        <td>
+            <table class="data data_common">
+                <tr>
+                    <td>
+                        <label for="barracks-levels-1">训练营等级</label>
+                    </td>
+                    <td>
+                        <select id="barracks-levels-1" tabindex="1">
+                            {% for i in test %}
+                            <option value="2">{{ i }}</option>
+                            {% endfor %}
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10" selected="selected">10</option>
+                        </select>
+                        <select id="barracks-levels-2" tabindex="5">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10" selected="selected">10</option>
+                        </select>
+                        <select id="barracks-levels-3" tabindex="10">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10" selected="selected">10</option>
+                        </select>
+                        <select id="barracks-levels-4" tabindex="15">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10" selected="selected">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="dark-barracks-levels-1">黑暗训练营等级</label>
+                    </td>
+                    <td>
+                        <select id="dark-barracks-levels-1" tabindex="20">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected="selected">4</option>
+                        </select>
+                        <select id="dark-barracks-levels-2" tabindex="25">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected="selected">4</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="army-camps">营地人口</label>
+                    </td>
+                    <td>
+                        <input type="number" data-object-type="all" step="5" min="20" max="220" class="js-number" data-multiplier="5" value="220" id="army-camps" size="3" tabindex="30"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="spell-factory-level">咒语工厂等级</label>
+                    </td>
+                    <td>
+                        <select id="spell-factory-level" tabindex="35">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected="selected">4</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>

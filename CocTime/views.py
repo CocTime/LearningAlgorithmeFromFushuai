@@ -14,6 +14,10 @@ class IndexView(generic.ListView):
 
 
 def index(request):
-    context = {'test': [1, 2, 3]}
+    context = {
+        'test': [1, 2, 3],
+        'barracks_levels': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    }
     return render(request, 'CocTime/index.html', context)
 
